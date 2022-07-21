@@ -69,6 +69,7 @@ get_header();
     </section>
     
     <section id="featured">
+        <h1>FEATURED DISHES</h1>
         <ul>
             
             <?php 
@@ -88,6 +89,16 @@ get_header();
         </ul>
     
     </section>
+    <section class="image-wrap" id="gallery">
+        <h1>THE GALLERY</h1>
+        <div class="image-masonry">
+            <div class="card card-tall " style="background-image: url('<?php echo(get_template_directory_uri()); ?>/images/gallery-1.jpg')"></div>
+            <div class="card" style="background-image: url('<?php echo(get_template_directory_uri()); ?>/images/gallery-2.jpg')"></div>
+            <div class="card" style="background-image: url('<?php echo(get_template_directory_uri()); ?>/images/gallery-3.jpg')"></div>
+            <div class="card" style="background-image: url('<?php echo(get_template_directory_uri()); ?>/images/gallery-4.jpg')"></div>
+            <div class="card" style="background-image: url('<?php echo(get_template_directory_uri()); ?>/images/gallery-5.jpg')"></div>
+        </div>
+        </section>
 </div>
     <!-- END HOMPAGE content -->
 		

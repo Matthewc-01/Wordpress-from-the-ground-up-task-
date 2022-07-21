@@ -69,6 +69,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+	margin:0;
+	padding:0;
 }
 
 /* Sections
@@ -77,9 +79,18 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
-	margin: 0;
-}
+
+
+body{
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+   overflow-x: hidden; 
+    overflow-y: scroll; 
+	
+	}
 
 /**
  * Render the `main` element consistently in IE.
@@ -1055,7 +1066,11 @@ display: block;
 }
 
 #featured{
-    margin-top: 100px;
+    margin-top: 200px;
+}
+#featured h1{
+	font-size: 20pt;
+	margin-bottom: 60px;
 }
 #featured ul{
     padding: 0;
@@ -1084,16 +1099,22 @@ display: block;
     content: "";
     display: block;
     }
+	footer{
+		margin: 0;
+		padding: 0;
+	}
 #footer{
     background-color: #3b3b3b;
     margin-top: 100px;
     padding:30px 0;
+	
 }
 #footer:after{
     clear: both;
     content: "";
     display: block;
 }
+
 footer ul{
     float: left;
     padding: 0;   
@@ -1332,4 +1353,83 @@ h1.logo{
 }
 .star-1{
 	width: 17px;
+}
+
+
+/*GALLERY CSS*/
+.image-wrap {
+	padding: 0;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+#gallery:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.image-wrap h1{
+	color: #555;
+	font-size: 20pt;
+}
+.image-masonry {
+
+	display: grid;
+	gap: 0rem;
+	grid-template-columns: repeat(auto-fit, minmax(367px, 12fr));
+	grid-auto-rows: 216px;
+
+	max-height:  432px;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.card {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #353535;
+	font-size: 3rem;
+	color: #fff;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+		rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+	height: 100%;
+	width: 100%;
+	transition: all 500ms;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+}
+.card:after,.image-masonry:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+@media screen and (max-width: 750px){
+	#gallery{
+		margin-bottom: 700px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.card-tall {
+		grid-row: span 2 / auto;
+	}
+
+	.card-wide {
+		grid-column: span 2 / auto;
+	}
+}
+
+
+
+.site-main{
+	min-height: calc(70vh - 40px);
 }
