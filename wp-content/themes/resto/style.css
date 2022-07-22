@@ -85,11 +85,15 @@ body{
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
    overflow-x: hidden; 
     overflow-y: scroll; 
+
 	
+	}
+	body::-webkit-scrollbar {
+		display: none;
 	}
 
 /**
@@ -742,7 +746,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
@@ -1099,13 +1103,12 @@ display: block;
     content: "";
     display: block;
     }
-	footer{
-		margin: 0;
-		padding: 0;
-	}
+footer{
+	margin: 0;
+	padding: 0;
+}
 #footer{
     background-color: #3b3b3b;
-    margin-top: 100px;
     padding:30px 0;
 	
 }

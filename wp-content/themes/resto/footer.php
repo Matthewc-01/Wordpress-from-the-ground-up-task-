@@ -17,13 +17,13 @@
                 <li>New York Restaurant</li>
                 <li>3926 Anmoore Road</li>
                 <li>New York, NY 10014</li>
-                <li>718-749171714</li>
+                <li><a href="tel:718-749171714">718-749171714</a></li>
             </ul>
             <ul>
                 <li>France Restaurant</li>
                 <li>68, rue de la Couronne</li>
                 <li>75002 PARIS</li>
-                <li>02.94.23.69.56</li>
+                <li><a href="tel:02.94.23.69.56">02.94.23.69.56</a></li>
             </ul>
             <ul>
                 <li><a href="">Blog</a></li>
@@ -33,7 +33,7 @@
             </ul>
             <ul>
                 <li>
-                    <img src="<?php echo(get_template_directory_uri()); ?>/images/black-resto-logo.png" alt="logo">
+                    <img src="<?php echo(get_template_directory_uri()); ?>/images/black-resto-logo.png" alt="resto black logo">
                 </li>
                 <li>
                     &copy; All rights reserve 2022 <?php printf( esc_html__( 'Proudly powered by %s', 'resto' ), 'WordPress' ); ?>

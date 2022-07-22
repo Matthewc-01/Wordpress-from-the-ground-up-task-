@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 <!-- START HOME PAGE content -->
 <div id="main-banner">
-        <img src="<?php echo(get_template_directory_uri()); ?>/images/banner.jpg" alt="Welcom to Resto">
+        <img src="<?php echo(get_template_directory_uri()); ?>/images/banner.jpg" alt="Welcom to Resto banner">
     </div>
     <div class="wrapper"> 
     <section id="home-menu">
