@@ -1415,13 +1415,19 @@ h1.logo{
 	content: "";
 }
 
+@media screen and (max-width: 1120px){
+	#gallery{
+		margin-bottom: 300px;
+	}
+}
 @media screen and (max-width: 750px){
 	#gallery{
-		margin-bottom: 700px;
+		margin-bottom: 1000px;
 	}
 }
 
 @media screen and (min-width: 600px) {
+	
 	.card-tall {
 		grid-row: span 2 / auto;
 	}
@@ -1431,7 +1437,11 @@ h1.logo{
 	}
 }
 
-
+@media screen and (max-width: 600px){
+#gallery{
+	margin-bottom: 800px;
+}
+}
 
 .site-main{
 	min-height: calc(70vh - 40px);
